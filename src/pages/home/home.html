@@ -1,0 +1,73 @@
+<ion-content >
+ 
+    <div style="background-image: url('assets/back.png');" class="btn_group_mid">
+      
+      <br>
+      <img src="assets/logo.png"  alt="logo">
+      <br>
+      <ion-list> 
+        <ion-card style="background-color:lightgray">
+          <ion-item> 
+          <ion-icon style="color: gray" item-right name="md-mail"></ion-icon>
+          <ion-input placeholder="Username" [(ngModel)]="login.email" type="email"></ion-input>
+        </ion-item>
+        </ion-card>
+        <ion-card style="background-color:lightgray">
+            <ion-item> 
+            <ion-icon style="color: gray" item-right name="ios-key"></ion-icon>
+          <ion-input placeholder="Password" [(ngModel)]="login.pass" type="password"></ion-input>
+         
+        </ion-item>
+      </ion-card>
+  
+      </ion-list>
+      
+      <button  ion-button round color="light"  (click)="onLogin()">Login</button>
+      
+      <br>
+      <br>
+      <br>
+      
+    </div>
+
+  
+        
+        <div text-center>
+          <button ion-fab style="display: inline-block;margin-top:-7%;background-color:lightgray" text-center ><ion-icon name="arrow-down"></ion-icon></button>
+        </div>
+
+    <span text-center></span>
+    <ion-list padding> 
+        <ion-card (click)="facebook()">
+          <ion-item style="background-color:#3B5998; color:white" text-center> 
+          <ion-icon style="color: white" item-left name="logo-facebook"></ion-icon>
+         Login with Facebook
+        </ion-item>
+      </ion-card>
+
+
+      <ion-card (click)="google()">
+          <ion-item style="background-color:#3B5998; color:white" text-center> 
+          <ion-icon style="color: white" item-left name="logo-googleplus"></ion-icon>
+         Login with Google
+        </ion-item>
+      </ion-card>
+      <!--
+           
+       <ion-card style="background-color:whitesmoke">
+            <ion-item style="background-color:#1DA1F2; color:white"  text-center> 
+            <ion-icon item-left name="logo-twitter"></ion-icon>
+            Login with Twitter         
+        </ion-item>
+
+     
+      
+      </ion-card>
+    -->
+      <br>
+      <button ion-button block (click)="register()">
+       Register
+       </button>
+      </ion-list>
+
+</ion-content>

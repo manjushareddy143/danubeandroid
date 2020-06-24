@@ -1,0 +1,69 @@
+<ion-content text-center>
+  <img src="assets/imgs/ability_logo.jpg" class="logo" alt="logo">
+  <ion-row>
+    <ion-col col-12 text-uppercase class="title">Heavy Equipment Rental</ion-col>
+
+  </ion-row>
+
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>What type of Heavy Equipment?</ion-col>
+  </ion-row>
+
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-textarea [(ngModel)]="data.type_of_heavy_equipment" rows="4" type="text" placeholder="Let us Know Here"> </ion-textarea>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>How Many Number of Equipment?</ion-col>
+  </ion-row>
+
+
+   <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="data.num_of_bedroom"  placeholder=" How Many Number of Equipment?"> </ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>When Do You Need the Service?</ion-col>
+  </ion-row>
+
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-datetime [(ngModel)]="data.when" type="date" min="2018" max="2020"> </ion-datetime>
+        <ion-icon style="color: black" item-right name="ios-calendar-outline"></ion-icon>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>How often do you need the service?</ion-col>
+  </ion-row>
+
+ 
+
+
+
+
+  <ion-row margin-horizontal margin-top justify-content-center>
+    <ion-col col-6>
+      <div class="wrapper btn btn-color" [ngClass]="active==15? 'active' : ''" (click)="fileProvider.getImage()">Upload picture</div>
+    </ion-col>
+    <ion-col col-6>
+      <div class="wrapper btn btn-color" [ngClass]="active==16? 'active' : ''" (click)="getFile()">Upload file</div>
+    </ion-col>
+
+    <ion-col col-8 style="margin-top:5%">
+      <div class="wrapper btn btn-color" [ngClass]="active==18? 'active' : ''" (click)="uploadData()">Sent quote</div>
+    </ion-col>
+    
+  </ion-row>
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+      <ion-title class="cardtype" *ngIf="data">   
+        <span style="color:white"> {{data.name}} </span>  
+      </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content text-center>
+  
+
+<ion-row no-padding>
+ <img [src]="data.image" class="mdf" alt="logo">
+ </ion-row>
+
+<ion-row>
+ <button  ion-button style="float:left" color="primary"  small>Brands</button>
+</ion-row>
+
+<ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper" style="background-color:whitesmoke">
+<ion-col >
+<span *ngFor="let im of img">
+ <img  [src]="im['path']" class="mdf1" alt="logo"  >&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+</ion-col>
+ </ion-row>
+
+
+ <ion-row>
+    <button  ion-button style="float:left" color="primary"   small>Description</button>
+   </ion-row>
+
+ <ion-row style="background-color:whitesmoke" margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col style="background-color:whitesmoke">
+   <ion-col *ngIf="data" > 
+  {{data.description}} 
+   </ion-col> 
+   <ion-col  > </ion-col> 
+</ion-col>
+  </ion-row>
+  <ion-row>
+  
+ </ion-row>
+
+   
+<ion-row>
+ <button  ion-button style="float:left" color="primary"   small>Requirement</button>
+</ion-row>
+
+ 
+
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-textarea name="message" [(ngModel)]="message" type="text" placeholder="Requirement"> </ion-textarea>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+  
+
+  <ion-row margin-horizontal margin-top justify-content-center>
+    <ion-col col-12>
+      <div class=" btn btn-color" [ngClass]="active==15? 'active' : ''" (click)="send()">Send Enquiry</div>
+    </ion-col>
+   
+  </ion-row>
+</ion-content>

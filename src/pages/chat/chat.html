@@ -1,0 +1,50 @@
+<!--
+  Generated template for the ImagesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content style="background-image: url('assets/img/gr.jpg');opacity: 0.5;object-fit: fill;background-size: 100%;">
+
+  <div *ngIf="!msgs">
+    Loading Chats
+  </div>
+  <div *ngIf="msgs" style="padding-bottom: 20%;">
+
+    <div *ngFor="let post of msgs">
+      <div *ngIf="myddt(post.from)">
+
+              <span class="leftt">
+              {{post.message}} <br><small>{{post.timestamp}}</small>
+              </span>
+        <br><br> <br><br>
+
+      </div>
+      <div *ngIf="!myddt(post.from)">
+
+              <span class="rightt">
+                  {{post.message}} <br><small>{{post.timestamp}}</small>
+               </span>
+        <br><br> <br><br>   <br><br>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+</ion-content>
+<ion-footer>
+  <ion-input type="text" placeholder="Message" [(ngModel)]="messages1"style="background-color: white;"></ion-input>
+
+  <button ion-button (click)="chat()" type="submit"   block>Send</button>
+</ion-footer>

@@ -1,0 +1,91 @@
+
+<ion-content no-margin no-padding>
+   
+   
+    <div no-padding> 
+    <img  src="assets/imgs/d.png"  class="logo" alt="logo">
+      </div> 
+      
+          
+          
+<ion-grid  >
+    <ion-row >
+        <ion-col col-4 no-padding>
+            <ion-item (click)="profile()">
+               <img style="margin: auto " text-center src="assets/imgs/icons/01.png"  />
+               <h5 text-center> Profile  </h5>
+            </ion-item>
+        </ion-col>
+
+        <ion-col col-4 no-padding>
+                <ion-item (click)="products()">
+                        <img src="assets/imgs/icons/02.png"  />
+                        <h5 text-center>Product Listing  </h5>
+                     </ion-item>
+        </ion-col>
+    
+        <ion-col (click)="offers()" col-4>
+                <ion-item>
+                        <img src="assets/imgs/icons/03.png"  />
+                        <h5 text-center>Offers  </h5>
+                     </ion-item>
+        </ion-col>
+
+    </ion-row>
+
+    
+
+    <ion-row >
+            <ion-col (click)="feedback()" col-4>
+                <ion-item>
+                   <img src="assets/imgs/icons/04.png"  />
+                   <h5 text-center>Feedback  </h5>
+                </ion-item>
+            </ion-col>
+    
+            <ion-col (click)="contact()" col-4>
+                    <ion-item>
+                            <img src="assets/imgs/icons/05.png"  />
+                            <h5 text-center>Location  </h5>
+                         </ion-item>
+            </ion-col>
+        
+            <ion-col (click)="complaint()" col-4>
+                    <ion-item>
+                            <img src="assets/imgs/icons/06.png"  />
+                            <h5 text-center>Customer Complaints  </h5>
+                         </ion-item>
+            </ion-col>
+    
+        </ion-row>
+
+        <ion-row >
+                <ion-col (click)="quote()" col-4>
+                    <ion-item>
+                       <img src="assets/imgs/icons/07.png"  />
+                       <h5 text-center>Get a Quote  </h5>
+                    </ion-item>
+                </ion-col>
+        
+                <ion-col (click)="contact()" col-4>
+                        <ion-item>
+                                <img src="assets/imgs/icons/08.png"  />
+                                <h5 text-center>Call Us  </h5>
+                             </ion-item>
+                </ion-col>
+            
+                <ion-col (click)="jobs()" col-4>
+                        <ion-item>
+                                <img src="assets/imgs/icons/09.png"  />
+                                <h5 text-center>Apply for Jobs  </h5>
+                             </ion-item>
+                </ion-col>
+        
+            </ion-row>
+        
+
+  
+    </ion-grid>
+
+
+</ion-content>

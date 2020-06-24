@@ -1,0 +1,27 @@
+page-option {
+    .logo {
+    height: 40px;
+    margin: 40px 0 0 0;
+  }
+
+  .cb-label {
+    font-size: 1.2em;
+
+  }
+
+  .option {
+    color: #203A69 !important;
+    position: absolute;
+
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+
+    .title {
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+  }
+
+  
+}

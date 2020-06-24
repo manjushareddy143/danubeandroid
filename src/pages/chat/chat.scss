@@ -1,0 +1,80 @@
+page-chat {
+  .dischats
+  {
+
+    background-image: url('/assets/img/bg.png');
+    object-fit: fill;
+  }
+  $categories: (
+          ionic: color($colors, primary),
+          angular: #AC282B,
+          communication: #8E8D93,
+          tooling: #FE4C52,
+          services: #FD8B2D,
+          design: #FED035,
+          workshop: #69BB7B,
+          food: #3BC7C4,
+          documentation: #B16BE3,
+          navigation: #6600CC,
+  );
+
+  @function auxiliary-categories() {
+    @return map-remove($categories);
+  }
+  .seee {
+    max-width: 100% !important;
+  }
+  page-schedule {
+    @each $track, $value in auxiliary-categories() {
+      ion-item-sliding[track=#{$track}] ion-label {
+        border-left: 2px solid $value;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .leftt
+  {
+
+    background: white !important;
+    display: inline-block !important;
+    color: black !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    text-align: left !important;
+    max-width: 240px !important;
+
+  }
+
+  .rightt
+  {
+
+    background: white !important;
+    display: inline-block;
+    color: black !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    text-align: right !important;
+    max-width: 240px !important;
+    clear: right;
+    right: 0px;
+    position: absolute;
+
+  }
+  @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate(5deg); }
+    95% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  span.wiggle {
+    display: inline-block;
+    animation: wiggle 1.5s infinite;
+  }
+
+  span.wiggle:hover {
+    animation: none;
+  }
+}

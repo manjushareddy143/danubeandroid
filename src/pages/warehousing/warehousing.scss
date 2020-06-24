@@ -1,0 +1,46 @@
+ page-warehousing {
+
+    color: #203A69 !important;
+
+
+
+    .title {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #203A69 !important;
+    }
+
+    .cb-label {
+      font-size: 1em;
+      font-weight: 500;
+      margin-left: 10px;
+      text-transform: uppercase;
+      color: #203A69 !important;
+    }
+
+    .wrapper {
+      border-radius: 5px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+    }
+
+   
+
+    .sub-title{
+      color: #203A69;
+      font-size: 1em;
+      font-weight: 400;
+    }
+
+    .btn-color {
+      background-color: #203A69;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .active {
+      background: #9e9c9c;
+      transform: scale(0.9);
+    }
+
+}
+

@@ -1,0 +1,59 @@
+page-contact {
+
+  color: white !important;
+
+  ion-select{
+    max-width: 100% !important;// your choice :)
+}
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 600;
+  //  color: white !important;
+  }
+
+  .cb-label {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: #203A69 !important;
+  }
+
+  .wrapper {
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+  }
+
+  .btn {
+    padding: 3px;
+    border-radius: 20px;
+    background: #dedede;
+  }
+  
+  .wrapper {
+    text-align: justify;
+    border-radius: 5px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+  }
+
+  .sub-title{
+  //  color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .btn-color {
+    background-color: white;
+  //  color: #fff;
+    text-transform: uppercase;
+  }
+
+  .active {
+    background:  white;
+    transform: scale(0.9);
+  }
+}

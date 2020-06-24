@@ -1,0 +1,75 @@
+<ion-content text-center>
+  <img src="assets/imgs/ability_logo.jpg" alt="logo">
+
+  <ion-row>
+    <ion-col col-12 text-uppercase class="title">Electrician Services</ion-col>
+
+  </ion-row>
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>How Many Hours do you need our Electrician?</ion-col>
+  </ion-row>
+
+
+   
+ <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="data.num_of_bedroom"  placeholder="How Many Hours do you need our Electrician?"> </ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>Tell us about the job</ion-col>
+  </ion-row>
+
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-textarea [(ngModel)]="data.description" rows="4" type="text" placeholder="Let us know here"> </ion-textarea>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>When Do you need the service?</ion-col>
+  </ion-row>
+
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-datetime  [(ngModel)]="data.when" type="date" displayFormat="MMM DD, YYYY HH:mm" min="2018" max="2020"> </ion-datetime>
+        <ion-icon style="color: black" item-right name="ios-calendar-outline"></ion-icon>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+
+
+
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>Where will the service take place?</ion-col>
+  </ion-row>
+
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="data.address" placeholder="Add Address"> </ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row margin-horizontal margin-top justify-content-center>
+    <ion-col col-6>
+      <div class="wrapper btn btn-color" [ngClass]="active==15? 'active' : ''" (click)="fileProvider.getImage()">Upload picture</div>
+    </ion-col>
+    <ion-col col-6>
+      <div class="wrapper btn btn-color" [ngClass]="active==16? 'active' : ''" (click)="getFile()">Upload file</div>
+    </ion-col>
+        <ion-col col-8 style="margin-top:5%">
+      <div class="wrapper btn btn-color" [ngClass]="active==18? 'active' : ''" (click)="uploadData()">Sent quote</div>
+    </ion-col>
+  </ion-row>
+</ion-content>

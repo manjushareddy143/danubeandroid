@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title class="cardtype">  Consumer Complaint
+      </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content text-center>
+ <img src="assets/imgs/logo.png" class="logo">
+
+   <ion-list>
+ <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+     
+        <ion-input type="text" [(ngModel)]="data.num_of_bedroom"  placeholder="Full Name *"> </ion-input>
+    
+    </ion-col>
+  </ion-row>
+<br>
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+     
+        <ion-input type="text" [(ngModel)]="data.num_of_bedroom"  placeholder="Email *"> </ion-input>
+    
+    </ion-col>
+  </ion-row>
+<br>
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+     
+        <ion-input type="text" [(ngModel)]="data.num_of_bedroom"  placeholder="Mobile"> </ion-input>
+    
+    </ion-col>
+  </ion-row>
+<br>
+
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+     
+        <ion-input type="text" [(ngModel)]="data.num_of_bedroom"  placeholder="Country"> </ion-input>
+    
+    </ion-col>
+  </ion-row>
+  <br>
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+     
+        <ion-input type="text" [(ngModel)]="data.num_of_bedroom"  placeholder="City"> </ion-input>
+    
+    </ion-col>
+  </ion-row>
+<br>
+<ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+  <ion-col>
+   
+      <ion-input type="text" [(ngModel)]="data.num_of_bedroom"  placeholder="Product Category"> </ion-input>
+  
+  </ion-col>
+</ion-row>
+<br>
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+     
+        <ion-textarea type="text" [(ngModel)]="data.num_of_bedroom"  placeholder="Complaint"> </ion-textarea>
+    
+    </ion-col>
+  </ion-row>
+<br>
+  <ion-row margin-horizontal margin-top justify-content-center>
+    <ion-col col-12>
+      <div class=" btn btn-color"  (click)="send()">Send Enquiry</div>
+    </ion-col>
+   
+  </ion-row>
+  </ion-list>
+</ion-content>

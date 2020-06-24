@@ -1,0 +1,78 @@
+<ion-content text-center>
+  <img src="assets/imgs/danube.png"  style="margin-top: 10%" alt="logo">
+   <ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>
+
+
+  <ion-row>
+     <ion-col col-6>
+      <ion-card>
+        <img src="assets/imgs/mdf/mdf1.jpg" (click)="commercial()" style="height: 50%"/>
+ 
+      </ion-card>
+    </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img src="assets/imgs/mdf/mdf2.jpg" (click)="ocean()" style="height: 110%"/>
+        </ion-card>
+      </ion-col>
+
+    <ion-col col-6>
+      <ion-card>
+        <img src="assets/imgs/mdf/mbf3.jpg" (click)="commercial()"  style="height: 110%"/>
+      </ion-card>
+    </ion-col>
+       <ion-col col-6>
+        <ion-card>
+          <img src="assets/imgs/mdf/mdf4.jpg" (click)="road()" style="height: 110%"/>
+        </ion-card>
+      </ion-col>
+         
+      <ion-col col-6>
+        <ion-card>
+          <img src="assets/imgs/mdf/mdf5.jpg" (click)="road()" style="height: 110%"/>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img src="assets/imgs/mdf/mdf6.jpg" (click)="road()" style="height: 110%"/>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img src="assets/imgs/mdf/mdf7.jpg" (click)="road()" style="height: 110%"/>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img src="assets/imgs/mdf/mdf8.jpg" (click)="road()" style="height: 110%"/>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img src="assets/imgs/mdf/mdf9.jpg" (click)="road()" style="height: 110%"/>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img src="assets/imgs/mdf/mdf10.jpg" (click)="road()" style="height: 110%"/>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img src="assets/imgs/mdf/mdf11.jpg" (click)="road()" style="height: 110%"/>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <img src="assets/imgs/mdf/mdf4.jpg" (click)="road()" style="height: 110%"/>
+        </ion-card>
+      </ion-col>
+ </ion-row>
+
+  <img src="assets/imgs/cards/png_building.png" class="tower">
+</ion-content>

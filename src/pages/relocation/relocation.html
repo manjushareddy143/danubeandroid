@@ -1,0 +1,80 @@
+<ion-content text-center>
+  <img src="assets/imgs/ability_logo.jpg" class="logo" alt="logo">
+  <ion-row>
+    <ion-col col-12 text-uppercase class="title">Relocation Services</ion-col>
+    <ion-col col-12 text-uppercase class="sub-title">What Type of House do You Live in?</ion-col>
+    <ion-col col-12 style="margin-left: 25%">
+      <ion-select [(ngModel)]="data.house" margin-horizontal padding-horizontal justify-content-around class="wrapper">
+        <ion-option value="Villa" selected>Villa</ion-option>
+        <ion-option value="Apartment">Apartment</ion-option>
+        <ion-option value="Studio">Studio</ion-option>
+      </ion-select>
+    </ion-col>
+  </ion-row>
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>How Many Bedrooms do you have?</ion-col>
+  </ion-row>
+
+ <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-input [(ngModel)]="data.to_address" type="text" placeholder="How Many Bedrooms do you have?"> </ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>When Do you need to move?</ion-col>
+  </ion-row>
+
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-datetime [(ngModel)]="data.when" type="date" min="2018" max="2020"> </ion-datetime>
+        <ion-icon style="color: black" item-right name="ios-calendar-outline"></ion-icon>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-item>
+    <ion-label>Is Date flexible?</ion-label>
+    <ion-toggle [(ngModel)]="data.date_flexible"></ion-toggle>
+  </ion-item>
+
+
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>Where are you moving from?</ion-col>
+  </ion-row>
+
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-input [(ngModel)]="data.from_address" type="text" placeholder="Add Address"> </ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row margin-vertical class="sub-title">
+    <ion-col text-uppercase>Where are you moving to?</ion-col>
+  </ion-row>
+
+  <ion-row margin-horizontal padding-horizontal justify-content-around class="wrapper">
+    <ion-col>
+      <ion-item>
+        <ion-input [(ngModel)]="data.to_address" type="text" placeholder="Add Address"> </ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row margin-horizontal margin-top justify-content-center>
+    <ion-col col-6>
+      <div class="wrapper btn btn-color" [ngClass]="active==15? 'active' : ''" (click)="fileProvider.getImage()">Upload picture</div>
+    </ion-col>
+    <ion-col col-6>
+      <div class="wrapper btn btn-color" [ngClass]="active==16? 'active' : ''" (click)="getFile()">Upload file</div>
+    </ion-col>
+     <ion-col col-8 style="margin-top:5%">
+      <div class="wrapper btn btn-color" [ngClass]="active==18? 'active' : ''" (click)="uploadData()">Sent quote</div>
+    </ion-col>
+  </ion-row>
+</ion-content>

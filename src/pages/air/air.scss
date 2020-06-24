@@ -1,0 +1,21 @@
+page-air {
+  .logo {
+        height: 40px;
+        margin: 30px 0 0 0;
+    }
+.img{
+    height: 120%
+}
+    .card-md,
+    .card-ios {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+
+    ion-card {
+        img {
+            height: 100px;
+        }
+    }
+}
+

@@ -1,0 +1,79 @@
+<ion-content class="main-view" padding>
+  <div class="overlay" (click)="dismiss()"></div>
+  <div class="modal_content">
+    <div >
+      <h2>Please Select Boxes</h2>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>Extra small 46x46x71</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box.Extra_small" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>Small 46x46x71</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box.Small" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>Medium 55x55x75</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box.Medium" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>Large 55x55x75</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box.Large" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>Jumbo 61x61x66</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box.Jumbo" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>Extra Jumbo 61x61x75</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box.Extra_Jumbo" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>2 ODD 46x46x72</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box._2_ODD" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>3 ODD 57x57x57</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box._3_ODD" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>4 ODD 36x36x30</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box._4_ODD" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>5 0DD 57x57x27</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box._5_ODD" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>6 ODD 45x45x45</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box._6_ODD" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+      <ion-row margin-vertical class="sub-title">
+        <ion-col style="text-align: left;margin-left: 5%"><b>7 0DD 50x50x50</b></ion-col>
+        <ion-col style="margin-top: -2%"><ion-input [(ngModel)]="box._7_ODD" style="margin-top: -2%;margin-left: -5%;border: solid;max-width: 100% !important" type="text" placeholder="Number Of Boxes"> </ion-input></ion-col>
+      </ion-row>
+
+
+      <ion-row responsive-sm>
+        <ion-col>
+          <button ion-button (click)="submit()" type="submit" block>Submit</button>
+        </ion-col>
+        <ion-col>
+          <button ion-button (click)="cancel()" color="light" block>Cancel</button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

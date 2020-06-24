@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title class="cardtype">   <ion-searchbar
+          [(ngModel)]="myInput"
+          [showCancelButton]="shouldShowCancel"
+          (ionInput)="onInput(myInput)"
+          (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content text-center>
+    <ion-slides  #slides autoplay="1" style="height:30%" autoplay="1500" loop="true" speed="500" pager="true" >
+       
+        <ion-slide>
+            <img style="min-width:100%"  src="assets/slider2.jpg" alt="ionic logo">
+            </ion-slide>
+           
+                <ion-slide>
+                    <img style="min-width:100%"  src="assets/slider2.jpg" alt="ionic logo">                </ion-slide>
+        </ion-slides>
+     
+
+    <ion-list style="background-color: mintcream;height: 5%" *ngFor="let rec of search" (click)="air(rec.id,rec.type)">
+        <h2> {{rec.name}}</h2>
+    </ion-list>
+    <ion-row no-padding>
+        <ion-col no-padding col-6 *ngFor="let cat of cats">
+            <ion-card no-padding (click)="air(cat.id,cat.type)" >
+                <img src={{cat.image}}  style="height: 100px"/>
+                
+                <h2 style="width: 100%;float: left;min-height:40px;text-align:center"> {{cat.name}}</h2>
+               <p style="min-width: 100%; border-bottom:1px solid black;"></p>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+
+
+</ion-content>
